@@ -1,0 +1,149 @@
+#header-overview {
+    display: flex;
+    justify-content: center;
+}
+
+
+.header__container {
+    margin-top: 50px;
+}
+
+
+.artist__list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#main__overview {
+    height: 28.875rem;
+    width: 300px;
+    overflow: scroll;
+    border: 1px solid #edf1f7;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    margin-top: 40px;
+}
+
+.artist__list-container div,
+.singer__albums div {
+    text-align: center;
+    width: 100%;
+    line-height: 1.25rem;
+    border-bottom: 1px solid #edf1f7;
+}
+
+.singer__bio p {
+    padding: 15px;
+}
+
+.artist__list-container div p,
+.singer__albums div a {
+        margin-top: 6px;
+        cursor: pointer;
+
+        margin-bottom: 6px;
+        color: #222b45;
+        font-family: Open Sans, sans-serif;
+        font-size: 0.9375rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+}
+
+
+
+
+
+
+.overview__wrapper {
+    background-color: #ffffff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    line-height: 1.25rem;
+}
+
+
+.artist__overview-container {
+    width: 300px;
+    text-align: center;
+}
+
+.singer__name,
+.album__title,
+.back__to-list {
+
+    border: 0.0625rem solid #e4e9f2;
+    border-radius: 0.25rem;
+    border: 0.0625rem solid #e4e9f2;
+}
+
+.arrow__left {
+    display: block;
+    width: 13px;
+    height: 12px;
+    margin-top: 18px;
+    margin-right: 15px;
+cursor: pointer;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    transform: rotate(-45deg);
+}
+
+.back__to-list {
+    display: flex;
+    justify-content: center;
+
+}
+
+#artist__overview {
+    margin-top: 50px;
+
+}
+
+
+.singer__bio p,
+.singer__albums div a {
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.singer__bio,
+.singer__albums {
+    border-radius: 0.25rem;
+    border: 0.0625rem solid #e4e9f2;
+}
+
+.singer__name,
+.album__title {
+    font-size: 1.2rem;
+}
+
+
+.singer__albums {
+    overflow: auto;
+    height: 300px;
+    border: 0.0625rem solid #e4e9f2;
+}
+
+.album__data {
+    padding: 8px;
+}
+
+.album__data a {
+    cursor: pointer;
+    text-decoration: none;
+}
+

@@ -1,0 +1,83 @@
+<div class="container">
+
+    <header *ngIf="isShow" id="header-overview">
+
+
+        <div class="header__container">
+            <app-search (onChange)="getResult($event)"></app-search>
+        </div>
+    </header>
+
+
+
+
+
+    <div *ngIf="isShow" id="main__overview">
+
+        
+        <div class="artist__list-container">
+
+
+            <div *ngFor="let item of musicList?.results?.artistmatches?.artist" (click)="openUser(item.name)">
+                <p>{{item.name}}</p>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+    <div *ngIf="!isShow" id="artist__overview">
+
+
+        <div class="artist__overview-container">
+
+            <div class="overview__wrapper">
+
+                <div class="back__to-list">
+
+                    <div (click)="isShow = true; musicList = []" class="arrow__left"></div>  <p>Back to Search.</p>
+
+                </div>
+
+                <div class="singer__name">
+
+                    <p>{{currentArtist?.artist?.name}}</p>
+                </div>
+
+                <div class="singer__bio">
+
+                    <p [innerHtml]="currentArtist?.artist.bio.summary"></p>
+                </div>
+
+                <div class="album__title">
+
+                    <p>Albums</p>
+
+                </div>
+
+
+                <div class="singer__albums">
+                    <div *ngFor="let album of artistData?.topalbums.album" class="album__data">
+
+                        <a href={{album.url}}>{{album.name}}</a>
+
+                    </div>
+                </div>
+
+                <div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</div>
