@@ -26,7 +26,6 @@ export class MainComponent {
   };
 
   getResult = ev => {
-    console.log(ev);
     this.apiService
       .searchMusic(ev, 'search')
       .pipe(
