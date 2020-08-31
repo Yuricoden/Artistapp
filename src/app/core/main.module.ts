@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 
-import { MainComponent } from '../core/main/main.component';
+import { MainComponent } from './main/main.component';
 import { SharedModule } from '../shared/shared.module';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
@@ -9,4 +9,4 @@ import { BrowserModule } from '@angular/platform-browser';
   imports: [SharedModule, CommonModule, BrowserModule],
   declarations: [MainComponent]
 })
-export class CoreModule {}
+export class MainModule {}
